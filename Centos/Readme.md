@@ -31,15 +31,20 @@ yum install centos-release-scl
 
 # Edit file /etc/yum.repos.d/zabbix.repo and enable zabbix-frontend repository.
 
+[zabbix-frontend]
+
+...
+
+enabled=1
+
+...
+
+
 ```
 vim /etc/yum.repos.d/zabbix.repo
 
 ```
 
-[zabbix-frontend]
-...
-enabled=1
-...
 
 
 # Install Zabbix frontend packages.
@@ -99,7 +104,7 @@ quit;
 
 -------------------------------------------------------------
 
-# 5. Now add zabbix database and zabbix user And Make sure you have database server up and running. U+1F600
+# 5. Now add zabbix database and zabbix user And Make sure you have database server up and running.
 
 Run the following on your database host.
 
@@ -110,9 +115,13 @@ mysql -u root -p
 your_root_password
 
 mysql> create database zabbix character set utf8 collate utf8_bin;
+
 mysql> create user zabbix@localhost identified by 'your_root_password';
+
 mysql> grant all privileges on zabbix.* to zabbix@localhost;
+
 mysql> set global log_bin_trust_function_creators = 1;
+
 mysql> quit;
 
 
