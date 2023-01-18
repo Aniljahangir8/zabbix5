@@ -116,7 +116,7 @@ your_root_password
 
 mysql> create database zabbix character set utf8 collate utf8_bin;
 
-mysql> create user zabbix@localhost identified by 'your_root_password';
+mysql> create user zabbix@localhost identified by 'your_zabbix_user_password';
 
 mysql> grant all privileges on zabbix.* to zabbix@localhost;
 
@@ -156,7 +156,7 @@ Edit file /etc/zabbix/zabbix_server.conf
 vim /etc/zabbix/zabbix_server.conf
 ```
 
-DBPassword=password
+DBPassword=your_zabbix_user_password
 
 -------------------------------------------------------------
 
@@ -169,7 +169,7 @@ Edit file /etc/opt/rh/rh-php72/php-fpm.d/zabbix.conf uncomment and set the right
 vim /etc/opt/rh/rh-php72/php-fpm.d/zabbix.conf
 ```
 
-; php_value[date.timezone] = Asia/Kolkata
+php_value[date.timezone] = Asia/Kolkata
 
 
 -------------------------------------------------------------
