@@ -203,6 +203,11 @@ systemctl enable zabbix-server zabbix-agent httpd rh-php72-php-fpm
 
 <a><img src="img/6.png" alt="1st Image"></a>
 
+# Default Username and Password: 
+
+Username: Admin
+Password: zabbix
+
 <a><img src="img/7.png" alt="1st Image"></a>
 
 <a><img src="img/8.png" alt="1st Image"></a>
