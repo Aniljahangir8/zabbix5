@@ -186,3 +186,25 @@ systemctl restart zabbix-server zabbix-agent httpd rh-php72-php-fpm
 ```
 systemctl enable zabbix-server zabbix-agent httpd rh-php72-php-fpm
 ```
+
+# Follow ScreenShots of Installation on Web Browser
+
+<p align="center">
+
+<a><img src="img/1.png" alt="1st Image"></a>
+
+<a><img src="img/2.png" alt="1st Image"></a>
+
+<a><img src="img/3.png" alt="1st Image"></a>
+
+<a><img src="img/4.png" alt="1st Image"></a>
+
+<a><img src="img/5.png" alt="1st Image"></a>
+
+<a><img src="img/6.png" alt="1st Image"></a>
+
+<a><img src="img/7.png" alt="1st Image"></a>
+
+<a><img src="img/8.png" alt="1st Image"></a>
+
+</p>
